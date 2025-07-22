@@ -36,7 +36,7 @@ const speakersData = [
 
 const organizersData = [
     { name: 'Yi Ma', affiliation: 'HKU', title: 'General Chair', img: 'https://www.cs.hku.hk/images/Staff/mayi_full.jpg', url: 'https://www.cs.hku.hk/index.php/people/academic-staff/mayi' },
-    { name: 'Ping Luo', affiliation: 'HKU', title: 'Program Chair', img: 'http://luoping.me/author/ping-luo/avatar_hu27a28382be217908a392d40ede6858cd_197018_270x270_fill_q90_lanczos_center.jpg', url: 'http://luoping.me/' },
+    { name: 'Ping Luo', affiliation: 'HKU', title: 'Program Chair', img: 'https://cs.hku.hk/images/Staff/pluo_full.jpg', url: 'http://luoping.me/' },
     { name: 'Xihui Liu', affiliation: 'HKU', title: 'Program Chair', img: 'https://xh-liu.github.io/files/XihuiLiu-photo.jpeg', url: 'https://xh-liu.github.io/' },
     { name: 'Bo Dai', affiliation: 'HKU', title: 'Local Chair', img: 'https://daibo.info/imgs/photo.jpg', url: 'https://daibo.info/' },
     { name: 'Hongyang Li', affiliation: 'HKU', title: 'Publicity Chair', img: 'https://lihongyang.info/content/hongyang_li.jpg', url: 'https://lihongyang.info/' },
