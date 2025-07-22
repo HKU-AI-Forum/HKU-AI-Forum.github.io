@@ -8,287 +8,288 @@
     --radius: 0.75rem;
 
     --header-bg: url('../asset/header1.png');
-  }
+}
   
-  /* Base styles */
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: var(--bg);
-    color: var(--text);
-  }
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 2em;
-  }
-  
-  /* ---- Cover Page ---- */
-  #cover-page {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: var(--header-bg) no-repeat center center/cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      z-index: 100;
-      opacity: 1;
-      transition: opacity 0.5s ease-out;
-  }
-  #cover-page::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(10, 110, 179, 0.35); 
-  }
-  #cover-page .content {
-      position: relative;
-      z-index: 1;
-  }
-  #cover-page h1 {
-      font-size: 3.5rem;
-      margin-bottom: 0.5rem;
-  }
-  #cover-page p {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-  }
-  #enter-button {
-      font-size: 1.2rem;
-      padding: 0.8rem 2.5rem;
-      background-color: var(--primary-light);
-      color: white;
-      border: 2px solid white;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  #enter-button:hover {
-      background-color: white;
-      color: var(--primary);
-      transform: scale(1.05);
-  }
-  #main-content {
-      display: none; /* Initially hidden */
-  }
-  
-  /* ---- Side Table of Contents ---- */
-  .side-toc {
-      position: fixed;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(5px);
-      padding: 1rem;
-      border-radius: var(--radius);
-      /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
-      z-index: 50;
-      border: none;
-  }
-  .side-toc ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      text-align: center;
-  }
-  .side-toc li {
-      margin-bottom: 0.75rem;
-  }
-  .side-toc a {
-      color: var(--muted);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: color 0.3s;
-  }
-  .side-toc a:hover, .side-toc a.active {
-      color: var(--primary);
-  }
-  .side-toc .separator {
-      border-top: 1px solid #e5e7eb;
-      margin: 0.75rem 0;
-  }
-  
-  /* Header */
-  header {
-    position: relative; /* 必须添加，为伪元素定位提供基准 */
-    background: var(--header-bg) no-repeat center center/cover;
-    min-height: 400px;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem 0;
-  }
-  
-  /* 为header添加一个深色叠加层，确保文字可读性 */
-  header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-color: rgba(10, 110, 179, 0.35); /* 使用与封面页相同的颜色和透明度 */
-      z-index: 1; /* 确保叠加层在背景之上 */
-  }
-  
-  /* 确保header中的内容在叠加层之上 */
-  header .container {
-      position: relative;
-      z-index: 2;
-  }
-  
-  /* Section Styles */
-  .section {
-    padding: 3em 0;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  .section:last-child {
-      border-bottom: none;
-  }
-  .section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 1em;
-    color: var(--primary);
-  }
-  
-  /* ---- Cards Grid ---- */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 1rem 2.5rem;
-    justify-items: center;
-  }
-  .card {
-    background:#fff;
-    border-radius: var(--radius);
-    box-shadow:0 4px 12px rgba(0,0,0,0.08);
-    padding:1rem 1rem;
-    text-align:center;
-    transition:transform .3s ease, box-shadow .3s ease;
-    width: 100%;
-    max-width: 180px;
-  }
-  .card:hover{ 
-    transform:translateY(-5px);
-    box-shadow:0 8px 16px rgba(0,0,0,0.1);
-  }
-  .card img{
-    width:100px; height:100px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:1rem;
-    border: 3px solid var(--bg);
-  }
-  .card h3{ margin:0 0 .25rem; font-size:1.1rem; }
-  .card .affiliation{ font-size:.9rem; color:var(--muted); }
-  .card a { color: var(--text); text-decoration:none; }
-    .card a:hover { color: var(--primary); }
-
-    /* Title css */
-    .card .card-title {
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin-top: 0.25rem;
+    /* Base styles */
+    html {
+        scroll-behavior: smooth;
     }
-
-    /* Affiliation css */
-    .card .card-affiliation {
-    font-size: 0.9rem;
-    color: var(--text);
-    margin-top: 0.25rem;
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: var(--bg);
+        color: var(--text);
     }
-
-    .card .card-title + .card-affiliation {
-        margin-top: 0.1rem;
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 0 2em;
     }
+    
+    /* ---- Cover Page ---- */
+    #cover-page {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--header-bg) no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        z-index: 100;
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
+    }
+    #cover-page::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(10, 110, 179, 0.35); 
+    }
+    #cover-page .content {
+        position: relative;
+        z-index: 1;
+    }
+    #cover-page h1 {
+        font-size: 3.5rem;
+        margin-bottom: 0.5rem;
+    }
+    #cover-page p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    #enter-button {
+        font-size: 1.2rem;
+        padding: 0.8rem 2.5rem;
+        background-color: var(--primary-light);
+        color: white;
+        border: 2px solid white;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    #enter-button:hover {
+        background-color: white;
+        color: var(--primary);
+        transform: scale(1.05);
+    }
+    #main-content {
+        display: none; /* Initially hidden */
+    }
+    
+    /* ---- Side Table of Contents ---- */
+    .side-toc {
+        position: fixed;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(5px);
+        padding: 1rem;
+        border-radius: var(--radius);
+        /* box-shadow: 0 4px 12px rgba(0,0,0,0.1); */
+        z-index: 50;
+        border: none;
+    }
+    .side-toc ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .side-toc li {
+        margin-bottom: 0.75rem;
+    }
+    .side-toc a {
+        color: var(--muted);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+    }
+    .side-toc a:hover, .side-toc a.active {
+        color: var(--primary);
+    }
+    .side-toc .separator {
+        border-top: 1px solid #e5e7eb;
+        margin: 0.75rem 0;
+    }
+    
+    /* Header */
+    header {
+        position: relative; /* 必须添加，为伪元素定位提供基准 */
+        background: var(--header-bg) no-repeat center center/cover;
+        min-height: 400px;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+    
+    /* 为header添加一个深色叠加层，确保文字可读性 */
+    header::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: rgba(10, 110, 179, 0.35); /* 使用与封面页相同的颜色和透明度 */
+        z-index: 1; /* 确保叠加层在背景之上 */
+    }
+    
+    /* 确保header中的内容在叠加层之上 */
+    header .container {
+        position: relative;
+        z-index: 2;
+    }
+    
+    /* Section Styles */
+    .section {
+        padding: 3em 0;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .section:last-child {
+        border-bottom: none;
+    }
+    .section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1em;
+        color: var(--primary);
+    }
+    
+    /* ---- Cards Grid ---- */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1rem 2.5rem;
+        justify-items: center;
+    }
+    .card {
+        background:#fff;
+        border-radius: var(--radius);
+        box-shadow:0 4px 12px rgba(0,0,0,0.08);
+        padding:1rem 1rem;
+        text-align:center;
+        transition:transform .3s ease, box-shadow .3s ease;
+        width: 100%;
+        max-width: 180px;
+    }
+    .card:hover{ 
+        transform:translateY(-5px);
+        box-shadow:0 8px 16px rgba(0,0,0,0.1);
+    }
+    .card img{
+        width:100px; height:100px;
+        border-radius:50%;
+        object-fit:cover;
+        margin-bottom:1rem;
+        border: 3px solid var(--bg);
+    }
+    .card h3{ margin:0 0 .25rem; font-size:1.1rem; }
+    .card .affiliation{ font-size:.9rem; color:var(--muted); }
+    .card a { color: var(--text); text-decoration:none; }
+        .card a:hover { color: var(--primary); }
 
-  
-  /* ---- Schedule ---- */
-  .schedule-wrapper { overflow-x: auto; }
-  table.schedule {
-    border-collapse: collapse;
-    width: 100%;
-    min-width: 700px;
-    background: #fff;
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  }
-  table.schedule th,
-  table.schedule td {
-    padding: 0.9rem 1.2rem;
-    border-bottom: 1px solid #e5e7eb;
-    text-align: left;
-  }
-  table.schedule thead {
-    background: var(--primary-dark-bg);
-    color: #fff;
-  }
-  table.schedule tbody tr:last-child td { border-bottom: none; }
-  table.schedule tbody tr:nth-child(even) { background: #fafafa; }
-  /* table.schedule td[colspan] { text-align: center; font-weight: 600; background: var(--bg); } */
-  table.schedule td[colspan] { text-align: center; font-weight: 600; }
+        /* Title css */
+        .card .card-title {
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin-top: 0.25rem;
+        }
 
-  table.schedule .schedule-title {
-    font-weight: 600;
-    color: var(--primary);
-  }
+        /* Affiliation css */
+        .card .card-affiliation {
+        font-size: 0.9rem;
+        color: var(--text);
+        margin-top: 0.25rem;
+        }
+
+        .card .card-title + .card-affiliation {
+            margin-top: 0.1rem;
+        }
+
+    
+    /* ---- Schedule ---- */
+    .schedule-wrapper { overflow-x: auto; }
+    table.schedule {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 700px;
+        background: #fff;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    table.schedule th,
+    table.schedule td {
+        padding: 0.9rem 1.2rem;
+        border-bottom: 1px solid #e5e7eb;
+        /* text-align: left; */
+        text-align: center;
+    }
+    table.schedule thead {
+        background: var(--primary-dark-bg);
+        color: #fff;
+    }
+    table.schedule tbody tr:last-child td { border-bottom: none; }
+    table.schedule tbody tr:nth-child(even) { background: #fafafa; }
+    /* table.schedule td[colspan] { text-align: center; font-weight: 600; background: var(--bg); } */
+    table.schedule td[colspan] { text-align: center; font-weight: 600; }
+
+    table.schedule .schedule-title {
+        font-weight: 600;
+        color: var(--primary);
+    }
 
     table.schedule tbody tr.day1 { background-color: #EBF5FF; }
     table.schedule tbody tr.day2 { background-color: #FFF9E6; }
     table.schedule tbody tr.day3 { background-color: #E8F8F5; }
-  
-  /* Footer */
-  .footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2em 0;
-    margin-top: 2rem;
-  }
+    
+    /* Footer */
+    .footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2em 0;
+        margin-top: 2rem;
+    }
 
-  #scroll-arrow {
-    position: absolute;
-    bottom: 40px; /* Distance from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 24px;
-    height: 24px;
-    border-left: 3px solid white;
-    border-bottom: 3px solid white;
-    transform: translateX(-50%) rotate(-45deg);
-    cursor: pointer;
-    animation: bounce 2s infinite;
-    transition: border-color 0.3s ease;
-  }
-  
-  #scroll-arrow:hover {
-    border-color: var(--primary-light); /* Change arrow color on hover */
-  }
-  
-  /* 箭头跳动动画 */
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateX(-50%) rotate(-45deg) translateY(0);
+    #scroll-arrow {
+        position: absolute;
+        bottom: 40px; /* Distance from the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 24px;
+        height: 24px;
+        border-left: 3px solid white;
+        border-bottom: 3px solid white;
+        transform: translateX(-50%) rotate(-45deg);
+        cursor: pointer;
+        animation: bounce 2s infinite;
+        transition: border-color 0.3s ease;
     }
-    40% {
-      transform: translateX(-50%) rotate(-45deg) translateY(-10px);
+    
+    #scroll-arrow:hover {
+        border-color: var(--primary-light); /* Change arrow color on hover */
     }
-    60% {
-      transform: translateX(-50%) rotate(-45deg) translateY(-5px);
+    
+    /* 箭头跳动动画 */
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateX(-50%) rotate(-45deg) translateY(0);
+        }
+        40% {
+            transform: translateX(-50%) rotate(-45deg) translateY(-10px);
+        }
+        60% {
+            transform: translateX(-50%) rotate(-45deg) translateY(-5px);
+        }
     }
-  }
-  
+    

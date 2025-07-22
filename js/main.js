@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 平滑滚动到 "About" 部分
             document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
- }, 500); // 这个时间应与 CSS 中的 transition duration 匹配
+        }, 500); // 这个时间应与 CSS 中的 transition duration 匹配
     }
 
     // 1. add click event listener to the scroll arrow
