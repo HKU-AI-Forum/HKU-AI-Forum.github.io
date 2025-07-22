@@ -2,26 +2,19 @@
 const scheduleData = [
     // Day 1
     { timeCategory: 'day1', type: 'title', time: 'Oct 26', title: 'Opening Remarks' },
-    { timeCategory: 'day1', type: 'event', time: '09:00–09:15', session: 'Official Welcome to the HKU AI Forum', speaker: 'Lead Organizer', affiliation: 'HKU' },
+    { timeCategory: 'day1', type: 'event', time: '09:00–09:15', session: 'Opening Remarks', speaker: 'Prof. Yi Ma', affiliation: 'HKU' },
     { timeCategory: 'day1', type: 'title', title: 'Invited Talk' },
-    { timeCategory: 'day1', type: 'event', time: '09:15–10:15', session: 'The Landscape of Modern AI', speaker: 'Alex Doe', affiliation: 'University A' },
-    { timeCategory: 'day1', type: 'separator', time: '10:15-10:45', title: 'Coffee Break' },
-    { timeCategory: 'day1', type: 'title', title: 'Panel Discussion' },
-    { timeCategory: 'day1', type: 'event', time: '10:45–12:00', session: 'Ethics and Governance in Generative Models', speaker: 'Alex Doe, Brenda Smith, Charlie Brown', affiliation: '-' },
-    { timeCategory: 'day1', type: 'event', time: '14:00–15:15', session: 'Commercializing AI Research', speaker: 'Brenda Smith, Ethan Hunt, Fiona Glenanne', affiliation: '-' },
+    { timeCategory: 'day1', type: 'event', time: 'TBD', session: 'TBD', speaker: 'TBD', affiliation: 'TBD' },
     { timeCategory: 'day1', type: 'day-separator' },
 
     // Day 2
-    { timeCategory: 'day2', type: 'title', time: 'Oct 27', title: 'Invited Talk' },
-    { timeCategory: 'day2', type: 'event', time: '09:15–10:15', session: 'Novel Architectures for AI Scalability', speaker: 'Diana Prince', affiliation: 'University D' },
-    { timeCategory: 'day2', type: 'separator', time: '10:15-10:45', title: 'Coffee Break' },
-    { timeCategory: 'day2', type: 'title', title: 'Panel Discussion' },
-    { timeCategory: 'day2', type: 'event', time: '10:45–12:00', session: 'AI Applications Across Industries', speaker: 'Charlie Brown, Diana Prince, Ethan Hunt', affiliation: '-' },
+    { timeCategory: 'day2', type: 'title', time: 'Oct 27', title: 'Invited Talk, Poster Session, and Panel Discussion' },
+    { timeCategory: 'day2', type: 'event', time: 'TBD', session: 'TBD', speaker: 'TBD', affiliation: 'TBD' },
     { timeCategory: 'day2', type: 'day-separator' },
 
     // Day 3
     { timeCategory: 'day3', type: 'title', time: 'Oct 28', title: 'Closed-door Discussion' },
-    { timeCategory: 'day3', type: 'event', time: '09:00–12:00', session: 'Strategy Session & Future Planning', speaker: 'Invited Participants Only', affiliation: '-' }
+    { timeCategory: 'day3', type: 'event', time: '09:00–12:00', session: 'Discussion', speaker: 'Invited Participants Only', affiliation: '-' }
 ];
 
 // --- Data for participants ---
