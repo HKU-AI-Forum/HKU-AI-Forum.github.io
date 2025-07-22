@@ -26,21 +26,21 @@ const scheduleData = [
 
 // --- Data for participants ---
 const speakersData = [
-    { name: 'Jun Zhu', affiliation: 'Tsinghua University', img: 'https://ml.cs.tsinghua.edu.cn/~jun/images/junzhu.jpg', url: 'https://ml.cs.tsinghua.edu.cn/~jun/index.shtml' },
-    { name: 'Jiajun Wu', affiliation: 'Stanford University', img: 'https://jiajunwu.com/images/Jiajun_Wu.jpg', url: 'https://jiajunwu.com/' },
-    { name: 'Saining Xie', affiliation: 'New York University', img: 'https://www.sainingxie.com/imgs/portrait.png', url: 'https://www.sainingxie.com/' },
-    { name: 'Qing Qu', affiliation: 'University of Michigan', img: 'https://qingqu.engin.umich.edu/wp-content/uploads/sites/42/2021/08/AE0E7C9E-9D72-4FDB-9C6B-1D3E19DCCE72_1_105_c.jpeg', url: 'https://qingqu.engin.umich.edu/' },
-    { name: 'Yang You', affiliation: 'NUS', img: 'https://www.comp.nus.edu.sg/~youy/index_files/yangyou3.png', url: 'https://www.comp.nus.edu.sg/~youy/' },
-    { name: 'Jianchao Yang', affiliation: 'ByteDance', img: 'https://2020.acmmm.org/asset/images/chairs/jianchao-yang.jpg', url: 'https://ieeexplore.ieee.org/author/37406108300' },
+    { name: 'Jun Zhu', affiliation: 'Tsinghua University', img: 'asset/avatars/Jun_Zhu.jpg', url: 'https://ml.cs.tsinghua.edu.cn/~jun/index.shtml' },
+    { name: 'Jiajun Wu', affiliation: 'Stanford University', img: 'asset/avatars/Jiajun_Wu.jpg', url: 'https://jiajunwu.com/' },
+    { name: 'Saining Xie', affiliation: 'New York University', img: 'asset/avatars/Saining_Xie.png', url: 'https://www.sainingxie.com/' },
+    { name: 'Qing Qu', affiliation: 'University of Michigan', img: 'asset/avatars/Qing_Qu.jpeg', url: 'https://qingqu.engin.umich.edu/' },
+    { name: 'Yang You', affiliation: 'NUS', img: 'asset/avatars/Yang_You.png', url: 'https://www.comp.nus.edu.sg/~youy/' },
+    { name: 'Jianchao Yang', affiliation: 'ByteDance', img: 'asset/avatars/Jianchao_Yang.jpg', url: 'https://ieeexplore.ieee.org/author/37406108300' },
 ];
 
 const organizersData = [
-    { name: 'Yi Ma', affiliation: 'HKU', title: 'General Chair', img: 'https://www.cs.hku.hk/images/Staff/mayi_full.jpg', url: 'https://www.cs.hku.hk/index.php/people/academic-staff/mayi' },
-    { name: 'Ping Luo', affiliation: 'HKU', title: 'Program Chair', img: 'https://cs.hku.hk/images/Staff/pluo_full.jpg', url: 'http://luoping.me/' },
-    { name: 'Xihui Liu', affiliation: 'HKU', title: 'Program Chair', img: 'https://xh-liu.github.io/files/XihuiLiu-photo.jpeg', url: 'https://xh-liu.github.io/' },
-    { name: 'Bo Dai', affiliation: 'HKU', title: 'Local Chair', img: 'https://daibo.info/imgs/photo.jpg', url: 'https://daibo.info/' },
-    { name: 'Hongyang Li', affiliation: 'HKU', title: 'Publicity Chair', img: 'https://lihongyang.info/content/hongyang_li.jpg', url: 'https://lihongyang.info/' },
-    { name: 'Yanchao Yang', affiliation: 'HKU', title: 'Industry Liaison Chair', img: 'https://datascience.hku.hk/wp-content/uploads/2023/04/photo-yanchan-yang-2-1-650x650.jpg', url: 'https://datascience.hku.hk/people/yanchao-yang/' }
+    { name: 'Yi Ma', affiliation: 'HKU', title: 'General Chair', img: 'asset/avatars/Yi_Ma.jpg', url: 'https://www.cs.hku.hk/index.php/people/academic-staff/mayi' },
+    { name: 'Ping Luo', affiliation: 'HKU', title: 'Program Chair', img: 'asset/avatars/Ping_Luo.jpg', url: 'http://luoping.me/' },
+    { name: 'Xihui Liu', affiliation: 'HKU', title: 'Program Chair', img: 'asset/avatars/Xihui_Liu.jpeg', url: 'https://xh-liu.github.io/' },
+    { name: 'Bo Dai', affiliation: 'HKU', title: 'Local Chair', img: 'asset/avatars/Bo_Dai.jpg', url: 'https://daibo.info/' },
+    { name: 'Hongyang Li', affiliation: 'HKU', title: 'Publicity Chair', img: 'asset/avatars/Hongyang_Li.jpg', url: 'https://lihongyang.info/' },
+    { name: 'Yanchao Yang', affiliation: 'HKU', title: 'Industry Liaison Chair', img: 'asset/avatars/Yanchao_Yang.jpg', url: 'https://datascience.hku.hk/people/yanchao-yang/' }
 ];
 
 // --- Card Generation Function ---
