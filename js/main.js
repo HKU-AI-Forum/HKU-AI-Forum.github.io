@@ -8,12 +8,8 @@ const scheduleData = [
     { timeCategory: 'day1', type: 'day-separator' },
 
     // Day 2
-    { timeCategory: 'day2', type: 'title', time: 'Oct 27', title: 'Invited Talk' },
+    { timeCategory: 'day2', type: 'title', time: 'Oct 27', title: 'Invited Talk, Poster Session, and Panel Discussion' },
     { timeCategory: 'day2', type: 'event', time: 'TBD', session: 'TBD', speaker: 'TBD', affiliation: 'TBD' },
-    { timeCategory: 'day2', type: 'title', title: 'Poster Session' },
-    { timeCategory: 'day2', type: 'event', time: 'TBD', session: 'TBD', speaker: 'TBD', affiliation: '-' },
-    { timeCategory: 'day2', type: 'title', title: 'Panel Discussion' },
-    { timeCategory: 'day2', type: 'event', time: 'TBD', session: 'TBD', speaker: 'TBD', affiliation: '-' },
     { timeCategory: 'day2', type: 'day-separator' },
 
     // Day 3
