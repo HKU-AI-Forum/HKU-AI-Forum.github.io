@@ -11,10 +11,6 @@ const scheduleData = [
     { timeCategory: 'day2', type: 'title', time: 'Oct 27', title: 'Invited Talk, Poster Session, and Panel Discussion' },
     { timeCategory: 'day2', type: 'event', time: 'TBD', session: 'TBD', speaker: 'TBD', affiliation: 'TBD' },
     { timeCategory: 'day2', type: 'day-separator' },
-
-    // Day 3
-    { timeCategory: 'day3', type: 'title', time: 'Oct 28', title: 'Closed-door Discussion' },
-    { timeCategory: 'day3', type: 'event', time: '09:00–12:00', session: 'Discussion', speaker: 'Invited Participants Only', affiliation: '-' }
 ];
 
 // --- Data for participants ---
