@@ -241,7 +241,7 @@
     table.schedule tbody tr:last-child td { border-bottom: none; }
     table.schedule tbody tr:nth-child(even) { background: #fafafa; }
     /* table.schedule td[colspan] { text-align: center; font-weight: 600; background: var(--bg); } */
-    table.schedule td[colspan] { text-align: center; font-weight: 600; }
+    table.schedule td[colspan] { text-align: center; /*font-weight: 600;*/ }
 
     table.schedule .schedule-title {
         font-weight: 600;
